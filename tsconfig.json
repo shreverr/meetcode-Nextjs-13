@@ -21,8 +21,10 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/components/*": ["./src/components/*"]
-    }
+      "@/components/*": ["./src/components/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/lib/*": ["./src/lib/*"],
+    } 
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
