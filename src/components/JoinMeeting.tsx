@@ -15,7 +15,7 @@ const JoinMeeting: FC<JoinMeetingProps> = ({ }) => {
 
   return (
     <div className='flex items-center'>
-      <div className='flex items-center '>
+      <div className='flex items-center border rounded-md dark:border-slate-700 '>
         <div className='bg-white dark:bg-slate-800 h-11 flex items-center rounded-s-md ps-3'>
           <Icons.Keyboard />
         </div>
