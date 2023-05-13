@@ -17,10 +17,10 @@ export default function RootLayout({
       <body className={mergeClassNames("min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-200 antialiased", 
       inter.className)}>
         <Providers>
-          { children }
           <Toaster position='bottom-right'/>
           {/* @ts-expect-error */}
           <Navbar/>
+          { children }
         </Providers>
       </body>
     </html>
