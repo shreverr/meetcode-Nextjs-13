@@ -1,9 +1,7 @@
 import JoinMeeting from "@/components/JoinMeeting";
 import NewMeetingButton from "@/components/NewMeetingButton";
-import { Button } from "@/components/ui/Button";
 import type { Metadata } from "next";
 import Image from 'next/image';
-
 
 export const metadata: Metadata = {
   title: 'Meetcode',

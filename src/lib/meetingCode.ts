@@ -1,13 +1,24 @@
+import Meeting from "@/models/Meeting";
+
 const characters: string = "abcdefghijklmnopqrstuvwxyz";
 
-export default function generateMeetingCode(): string {
-  let generatedMeetingCode: string = "";
-  const meetingCodeLength: number = 10;
+function generateCode(): string {
+  let generatedCode: string = "";
+  const CodeLength: number = 10;
 
-  for (let index = 0; index < meetingCodeLength; index++) {
+  for (let index = 0; index < CodeLength; index++) {
     let randomSelectedCharacter: string = characters.charAt(Math.floor(Math.random() * characters.length));
-    generatedMeetingCode += randomSelectedCharacter;
+    generatedCode += randomSelectedCharacter;
   }
+
+  return generatedCode;
+}
+
+export default async function generateMeetingCode(){
+  let generatedMeetingCode: string = "";
+  do {
+    generatedMeetingCode = generateCode();
+  } while ((await Meeting.find({ meetingCode: generatedMeetingCode })).length !== 0)
 
   return generatedMeetingCode;
 }
