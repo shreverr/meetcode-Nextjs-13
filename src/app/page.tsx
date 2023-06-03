@@ -1,7 +1,7 @@
-import JoinMeeting from "@/components/JoinMeeting";
-import NewMeetingButton from "@/components/NewMeetingButton";
-import type { Metadata } from "next";
-import Image from 'next/image';
+import JoinMeeting from "@/components/JoinMeeting" 
+import NewMeetingButton from "@/components/NewMeetingButton" 
+import type { Metadata } from "next" 
+import Image from 'next/image' 
 
 export const metadata: Metadata = {
   title: 'Meetcode',
@@ -39,5 +39,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  ) 
 }

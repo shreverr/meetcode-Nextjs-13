@@ -1,8 +1,8 @@
 'use client'
 
-import { FC } from 'react';
-import { Button } from '@/ui/Button';
-import Icons from '@/ui/Icons';
+import { FC } from 'react' 
+import { Button } from '@/ui/Button' 
+import Icons from '@/ui/Icons' 
 
 interface NewMeetingButtonProps { }
 
@@ -18,7 +18,7 @@ const NewMeetingButton: FC<NewMeetingButtonProps> = ({ }) => {
         New Meeting
       </span>
     </Button>
-  );
+  ) 
 }
 
-export default NewMeetingButton;
+export default NewMeetingButton 

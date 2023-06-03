@@ -1,19 +1,19 @@
 'use client'
 
-import Image from 'next/image';
-import { FC } from 'react';
-import { Button } from '@/ui/Button';
-import { useSession } from 'next-auth/react';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/DropdownMenu';
-import SignOutButton from '@/components/SignOutButton';
+import Image from 'next/image' 
+import { FC } from 'react' 
+import { Button } from '@/ui/Button' 
+import { useSession } from 'next-auth/react' 
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/DropdownMenu' 
+import SignOutButton from '@/components/SignOutButton' 
 
 interface ProfileProps {
 
 }
 
 const Profile: FC<ProfileProps> = ({ }) => {
-  const { data: session } = useSession();
-  const profilePictureUrl = typeof session?.user?.image == 'string' ? session?.user?.image : '/defaultProfilePicture.jpg';
+  const { data: session } = useSession() 
+  const profilePictureUrl = typeof session?.user?.image == 'string' ? session?.user?.image : '/defaultProfilePicture.jpg' 
 
   return (
     <DropdownMenu>
@@ -28,10 +28,10 @@ const Profile: FC<ProfileProps> = ({ }) => {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  ) 
 }
 
-export default Profile;
+export default Profile 
 // return (<div>
 //   <Image src={profilePictureUrl} width="40" height="40" alt="profile picture" className={mergeClassNames(buttonVariants({ variant: 'outline', size: 'pfp' }), 'rounded-full')}></Image>
-// </div>);
+// </div>) 

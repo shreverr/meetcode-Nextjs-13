@@ -1,5 +1,5 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
+import NextAuth, { NextAuthOptions } from "next-auth" 
+import GoogleProvider from "next-auth/providers/google" 
 
 function getGoogleCredentials(): { clientId: string; clientSecret: string } {
   const clientId = process.env.GOOGLE_CLIENT_ID
@@ -25,6 +25,6 @@ export const authOptions: NextAuthOptions = {
   ],
 }
 
-const handler = NextAuth(authOptions);
+const handler = NextAuth(authOptions) 
 
-export { handler as GET, handler as POST };
+export { handler as GET, handler as POST } 

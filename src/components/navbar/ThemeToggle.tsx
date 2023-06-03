@@ -1,15 +1,15 @@
 'use client'
 
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/DropdownMenu';
-import { useTheme } from 'next-themes';
-import { FC } from 'react';
-import { Button } from '@/ui/Button';
-import Icons from '@/ui/Icons';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/DropdownMenu' 
+import { useTheme } from 'next-themes' 
+import { FC } from 'react' 
+import { Button } from '@/ui/Button' 
+import Icons from '@/ui/Icons' 
 
 interface ThemeToggleProps { }
 
 const ThemeToggle: FC<ThemeToggleProps> = ({ }) => {
-  const { setTheme } = useTheme();
+  const { setTheme } = useTheme() 
 
   return (
     <DropdownMenu>
@@ -35,7 +35,7 @@ const ThemeToggle: FC<ThemeToggleProps> = ({ }) => {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  ) 
 }
 
-export default ThemeToggle;  
+export default ThemeToggle   
