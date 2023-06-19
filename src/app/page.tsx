@@ -21,6 +21,7 @@ export default function Home() {
               A video conferencing app where you can code on the go.
             </p>
             <div className="p-3 mt-4 flex gap-4 items-center justify-center">
+              {/* @ts-expect-error */}
               <NewMeetingButton />
               <JoinMeeting />
             </div>

@@ -13,7 +13,7 @@ interface ProfileProps {
 
 const Profile: FC<ProfileProps> = ({ }) => {
   const { data: session } = useSession() 
-  const profilePictureUrl = typeof session?.user?.image == 'string' ? session?.user?.image : '/defaultProfilePicture.jpg' 
+  const profilePictureUrl = typeof session?.user?.image === 'string' ? session?.user?.image : '/defaultProfilePicture.jpg' 
 
   return (
     <DropdownMenu>

@@ -1,7 +1,8 @@
 import mongoose from 'mongoose' 
 
 function getDbUri(): string  {
-  const dbUri = process.env.DATABASE_URL 
+  const dbUri = process.env.DATABASE_URL
+   
   if (!dbUri || dbUri.length === 0) {
     throw new Error('Please define the MONGODB_URI environment variable inside .env.local') 
   }
