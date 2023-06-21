@@ -1,4 +1,3 @@
-import Navbar from '@/components/navbar/Navbar' 
 import Providers from '@/components/Providers' 
 import { mergeClassNames } from '@/lib/utils' 
 import '@/styles/globals.css' 
@@ -18,8 +17,6 @@ export default function RootLayout({
       inter.className)}>
         <Providers>
           <Toaster position='bottom-right'/>
-          {/* @ts-expect-error */}
-          <Navbar/>
           { children }
         </Providers>
       </body>

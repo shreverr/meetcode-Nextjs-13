@@ -4,13 +4,11 @@ import { FC } from 'react'
 import { Button } from './ui/Button' 
 import Icons from './ui/Icons' 
 
-interface JoinMeetingProps {
-
-}
+interface JoinMeetingProps { }
 
 const JoinMeeting: FC<JoinMeetingProps> = ({ }) => {
   const joinMeeting = () => {
-
+    
   }
 
   return (
