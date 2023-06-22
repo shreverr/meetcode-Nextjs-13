@@ -1,13 +1,13 @@
 import Meeting from "@/models/Meeting" 
 
-const characters: string = "abcdefghijklmnopqrstuvwxyz" 
+const characters = "abcdefghijklmnopqrstuvwxyz" 
 
 function generateCode(): string {
-  let generatedCode: string = "" 
-  const CodeLength: number = 10 
+  let generatedCode = "" 
+  const CodeLength = 10 
 
   for (let index = 0; index < CodeLength; index++) {
-    let randomSelectedCharacter: string = characters.charAt(Math.floor(Math.random() * characters.length)) 
+    let randomSelectedCharacter = characters.charAt(Math.floor(Math.random() * characters.length)) 
     generatedCode += randomSelectedCharacter 
   }
 
